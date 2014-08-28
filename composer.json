@@ -1,0 +1,11 @@
+{
+    "name": "ptica/auth-helper",
+    "type": "cakephp-plugin",
+    "description": "AuthHelper for CakePHP 2.x",
+    "homepage": "http://github.com/ptica/AuthHelper",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.2.8",
+        "composer/installers": "*"
+    }
+}
