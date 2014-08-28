@@ -1,8 +1,12 @@
 AuthHelper
 ==========
 
-helper to check access to controllers/action
-according to rules set by any Auth::authorize objects you've configured
+You've configured your `Auth->authenticate` and `Auth->authorize`
+and now you just want to hide the links that current user
+is not allowed to see anyway.
+
+Enter `AuthHelper->is_allowed()`
+
 
 TODO
 ----
@@ -47,7 +51,7 @@ Now to use the Helper, simply load it in your Controller:
 public $helpers = array('AuthHelper.Auth');
 ```
 
-Finally do an auth check:
+Finally do the auth check:
 
 ```php
 # any_view.ctp
