@@ -3,7 +3,7 @@ AuthHelper
 
 You've configured your `Auth->authenticate` and `Auth->authorize`
 and now you just want to hide the links that current user
-is not allowed to see anyway.
+is not allowed to access anyway.
 
 Enter `AuthHelper->is_allowed()`
 
