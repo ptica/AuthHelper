@@ -31,7 +31,10 @@ class AuthHelper extends AppHelper {
         $this->Auth = $settings['Auth'];
 	}
 
-    public function is_allowed($url, $user) {
+    public function is_allowed($url, $user=null) {
+        if ($user === null) {
+            $user = AuthComponent::user();
+        }
         // TODO account for $this->Auth->allow() as well
         // so far I just duplicate the allow in acl.ini of TinyAuthorize
 
